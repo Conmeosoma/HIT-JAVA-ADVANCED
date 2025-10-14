@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-
 // CodeByConMeoSoMa
 // /\_/\  
 //( o.o ) 
