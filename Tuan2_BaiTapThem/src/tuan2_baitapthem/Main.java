@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Utils BaiTap = new Utils();
+        Utils baiTap = new Utils();
         int choice;
         do {
             System.out.println("_____MENU_____");
@@ -21,24 +21,24 @@ public class Main {
             sc.nextLine();
             switch (choice) {
                 case 0:
-                    BaiTap.addArray();
+                    baiTap.addArray();
 
                     break;
                 case 1:
-                    BaiTap.sum();
+                    baiTap.sum();
 
                     break;
                 case 2: 
-                    System.out.println("So lon nhat co trong mang la: " + BaiTap.searchMax(BaiTap.a, BaiTap.n));
+                    System.out.println("So lon nhat co trong mang la: " + baiTap.searchMax(baiTap.a, baiTap.n));
                     
-                    BaiTap.searchMin();
+                    baiTap.searchMin();
                     break;
                 case 3:
-                    BaiTap.bubbleSort();
+                baiTap.bubbleSort();
 
                     break;
                 case 4:
-                    BaiTap.showPrimeInArray();
+                    baiTap.showPrimeInArray();
 
                     break;
                 default:
