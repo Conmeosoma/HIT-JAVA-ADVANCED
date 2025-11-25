@@ -47,7 +47,7 @@ public class Tester extends Employee implements IWorkable {
     @Override
     public String toString() {
         super.toString();
-        return "Tester{" + "bugsDetectedCount=" + bugsDetectedCount + '}';
+        return super.toString() +  "Tester{" + "bugsDetectedCount=" + bugsDetectedCount + '}';
     }
     
 

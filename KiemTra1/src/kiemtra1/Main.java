@@ -32,6 +32,7 @@ public class Main {
                     }
                     break;
                 case 3:
+                    sc.nextLine();
                     System.out.println("Nhap id: ");
                     String id = sc.nextLine();
                     
@@ -39,6 +40,7 @@ public class Main {
                     break;
                 case 4:                    
                     List<Employee> tmp = new ArrayList<>();
+                    sc.nextLine();
                     System.out.println("Nhap ten can tim: ");
                     String name = sc.nextLine();
                     tmp = serviceImpl.getEmployeeByName(name);
@@ -55,7 +57,6 @@ public class Main {
                     throw new AssertionError();
             }
         } while (true);
-        
     }
     
 }

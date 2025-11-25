@@ -41,6 +41,8 @@ public class IEmployeeServiceImpl implements IEmployeeService {
             if (e.getId().equalsIgnoreCase(id)) {
                 System.out.println("Da tim thay nhan vien: " + e.toString());
                 flag = true;
+                return e;
+                
             }
         }
         if (!flag) {
@@ -53,8 +55,6 @@ public class IEmployeeServiceImpl implements IEmployeeService {
     public List<Employee> getEmployeeByName(String name) {
         List<Employee> employees = new ArrayList<>();
         boolean flag = false;
-        System.out.println("Nhap ten: ");
-        name = sc.nextLine();
         for (Employee e : listEmployees) {
             if (e.getName().equalsIgnoreCase(name)) {
                 employees.add(e);

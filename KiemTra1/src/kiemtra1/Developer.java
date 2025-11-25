@@ -29,17 +29,19 @@ public class Developer extends Employee implements IDebuggable, IWorkable {
 //        return employeeCount;
 //    }
 //
-//    @Override
+//    @Overrides
 //    public void setEmployeeCount(int employeeCount) {
 //        this.employeeCount = employeeCount;
 //    }
 
-    
     @Override
     public String toString() {
-        super.toString();
-        return "Developer{" + "overtimeHours=" + overtimeHours + '}';
+        return super.toString() + "Developer{" + "overtimeHours=" + overtimeHours + '}';
     }
+    
+
+    
+    
 
     @Override
     public double calculateSalary() {
