@@ -5,10 +5,11 @@
 package Tuan5_BaiTapThem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class IBookServiceImpl implements IBookService {
 
-    ArrayList<Book> Books = new ArrayList<>();
+    List<Book> Books = new ArrayList<>();
 
     @Override
     public void addBook(Book book) {
